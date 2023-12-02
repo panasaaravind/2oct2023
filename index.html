@@ -4,11 +4,115 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>css pricing</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
-            
+            body{
+                background-color: #E6E6E6;
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .pricing_table_box{
+                width: 80%;
+                height: 500px;
+                margin: 100px auto;
+                clear: both;
+            }
+            .pricing_box{
+                width: 29%;
+                height: 100%;
+                float: left;
+                background-color: #FFFFFF;
+                border-top-left-radius:100px;
+                border-bottom-right-radius:100px;
+                box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                position:relative;
+            }
+            .pricing_table_box > :nth-child(2){
+                margin: 0px 50px;
+            }
+            .pricing_table_box ul{
+                list-style: none;
+                width: 60%;
+                margin: 60px auto;
+                padding: 0px;
+            }
+            .pricing_table_box ul >li{
+                height: 50px;
+                border-bottom: 1px solid #E0E0E0;
+                line-height: 50px;
+            }
+            .green{
+                color: #388C00;
+                margin-right: 30px;
+            }
+            .red{
+                color: #FF3B3C;
+                margin-right: 30px;
+            }
+            button{
+                background-color: #FF072F;
+                color: #fff;
+                padding: 10px 50px;
+                border: none;
+                position:absolute;
+                bottom: 30px;
+                left: -30px;
+            }
+            .pricing_badge{
+                z-index: 99;
+                width: 100px;
+                background: #FF072F;
+                height: 30px;
+                position:absolute;
+                top:70px;
+                right: -30px;
+                line-height: 30px;
+                color: #fff;
+            }
+
         </style>
     </head>
     <body>
-        
+        <div class="pricing_table_box">
+            <div class="pricing_box">
+                <h1>Basic</h1>
+                <div class="pricing_badge">$2.99</div>
+                <ul>
+                    <li><i class="fa-solid fa-check green"></i>sample text here    </li>
+                    <li><i class="fa-solid fa-xmark red"></i>  other text title    </li>
+                    <li><i class="fa-solid fa-xmark red"></i>  text space goes here</li>
+                    <li><i class="fa-solid fa-xmark red"></i>  discription space   </li>
+                    <li><i class="fa-solid fa-xmark red"></i>  sample text here    </li>
+                </ul>
+                <button class="button">Select</button>
+            </div>
+            <div class="pricing_box">
+                <h1>Standard</h1>
+                <div class="pricing_badge">$2.99</div>
+                <ul>
+                    <li><i class="fa-solid fa-check green"></i>sample text here    </li>
+                    <li><i class="fa-solid fa-check green"></i>other text title    </li>
+                    <li><i class="fa-solid fa-check green"></i>text space goes here</li>
+                    <li><i class="fa-solid fa-xmark red"></i>  discription space   </li>
+                    <li><i class="fa-solid fa-xmark red"></i>  sample space here   </li>
+                </ul>
+                <button class="button">Select</button>
+            </div>
+            <div class="pricing_box" style="float: right;" >
+                <h1>Premium</h1>
+                <div class="pricing_badge">$2.99</div>
+                <ul>
+                    <li><i class="fa-solid fa-check green"></i> sample text here    </li>
+                    <li><i class="fa-solid fa-check green"></i> other text title    </li>
+                    <li><i class="fa-solid fa-check green"></i> text space goes here</li>
+                    <li><i class="fa-solid fa-check green"></i> discription space   </li>
+                    <li><i class="fa-solid fa-check green"></i> sample space here   </li>
+                </ul>
+                <button class="button">Select</button>
+            </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
 </html>
